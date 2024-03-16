@@ -81,7 +81,7 @@ def play_again():
     return input('Would you like to play again? (yes/no): ').lower().startswith('y')
 
 def hangman_game():
-    print('|_H_A_N_G_M_A_N_|')
+    print('|H_A_N_G_M_A_N|')
 
     missed_letters = ''
     correct_letters = ''
