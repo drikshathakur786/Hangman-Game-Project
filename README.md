@@ -1,6 +1,6 @@
 # 🎉 Hangman-Game-Project 🎮
 🔍 Hey there! Welcome to our awesome Hangman Game Project repository! 💻  
-🤠 We're a group of cool peeps working on bringing back the classic Guess-the-Word game using Python. 📦  
+🤠 We're a dynamic duo working on bringing back the classic Guess-the-Word game using Python. 📦  
 ✨ Join us as we code, document, and have a blast with Hangman! 🎉  
 
 ## Team Members
