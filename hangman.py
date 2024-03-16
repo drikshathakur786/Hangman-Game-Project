@@ -1,4 +1,6 @@
 import random
+
+# List of hangman graphics, each representing a stage of the hangman game
 HANGMAN_GRAPHICS = ['''
   +---+
       |
@@ -36,6 +38,7 @@ HANGMAN_GRAPHICS = ['''
  / \\  |
      ===''']
 
+# List of words for the game
 word_list = ['afghanistan', 'albania', 'algeria', 'andorra', 'angola', 'argentina', 'armenia', 'australia', 'austria', 'azerbaijan', 'bahamas', 'bahrain', 'bangladesh', 'barbados', 'belarus', 'belgium', 'belize', 'benin', 'bhutan', 'bolivia', 'bosnia', 'botswana', 'brazil', 'brunei', 'bulgaria', 'burkina', 'burundi', 'cambodia', 'cameroon', 'canada', 'cape verde', 'chad', 'chile', 'china', 'colombia', 'comoros', 'congo', 'croatia', 'cuba', 'cyprus', 'czech republic', 'denmark', 'djibouti', 'dominica', 'ecuador', 'egypt', 'el salvador', 'equatorial guinea', 'eritrea', 'estonia', 'ethiopia', 'fiji', 'finland', 'france', 'gabon', 'gambia', 'georgia', 'germany', 'ghana', 'greece', 'grenada', 'guatemala', 'guinea', 'guyana', 'haiti', 'honduras', 'hungary', 'iceland', 'india', 'indonesia', 'iran', 'iraq', 'ireland', 'israel', 'italy', 'jamaica', 'japan', 'jordan', 'kazakhstan', 'kenya', 'kiribati', 'kuwait', 'kyrgyzstan', 'laos', 'latvia', 'lebanon', 'lesotho', 'liberia', 'libya', 'liechtenstein', 'lithuania', 'luxembourg', 'macedonia', 'madagascar', 'malawi', 'malaysia', 'maldives', 'mali', 'malta', 'marshall islands', 'mauritania', 'mauritius', 'mexico', 'micronesia', 'moldova', 'monaco', 'mongolia', 'montenegro', 'morocco', 'mozambique', 'myanmar', 'namibia', 'nauru', 'nepal', 'netherlands', 'new zealand', 'nicaragua', 'niger', 'nigeria', 'north korea', 'norway', 'oman', 'pakistan', 'palau', 'panama', 'papua new guinea', 'paraguay', 'peru', 'philippines', 'poland', 'portugal', 'qatar', 'romania', 'russia', 'rwanda', 'saint kitts and nevis', 'saint lucia', 'saint vincent and the grenadines', 'samoa', 'san marino', 'sao tome and principe', 'saudi arabia', 'senegal', 'serbia', 'seychelles', 'sierra leone', 'singapore', 'slovakia', 'slovenia', 'solomon islands', 'somalia', 'south africa', 'south korea', 'south sudan', 'spain', 'sri lanka', 'sudan', 'suriname', 'swaziland', 'sweden', 'switzerland', 'syria', 'taiwan', 'tajikistan', 'tanzania', 'thailand', 'togo', 'tonga', 'trinidad and tobago', 'tunisia', 'turkey', 'turkmenistan', 'tuvalu', 'uganda', 'ukraine', 'united arab emirates', 'united kingdom', 'united states', 'uruguay', 'uzbekistan', 'vanuatu', 'venezuela', 'vietnam', 'yemen', 'zambia', 'zimbabwe']
 
 def choose_random_word(words):
@@ -64,15 +67,15 @@ def get_guess(already_guessed):
     Returns a valid single letter guess from the player.
     """
     while True:
-        guess = input('Please guess a letter: ').lower()
+        guess = input('Please guess a letter: ').lower()  # Prompts the player to enter a letter
         if len(guess) != 1:
-            print('Please enter only one letter at a time.')
+            print('Please enter only one letter at a time.') # Prints a message if the input is not a single letter
         elif guess not in 'abcdefghijklmnopqrstuvwxyz':
-            print('Please enter a letter from the alphabet.')
+            print('Please enter a letter from the alphabet.')  # Prints a message if the input is not a letter
         elif guess in already_guessed:
-            print('You have already guessed that letter. Try again.')
+            print('You have already guessed that letter. Try again.') # Prints a message if the letter has already been guessed
         else:
-            return guess
+            return guess # Returns the valid guess
 
 def play_again():
     """
@@ -81,10 +84,10 @@ def play_again():
     return input('Would you like to play again? (yes/no): ').lower().startswith('y')
 
 def hangman_game():
-    print('|H_A_N_G_M_A_N|')
+    print('|H_A_N_G_M_A_N|') # Prints the title of the game
 
-    missed_letters = ''
-    correct_letters = ''
+    missed_letters = '' # Initializes a string to store missed letters
+    correct_letters = '' # Initializes a string to store correctly guessed letters
     secret_word = choose_random_word(word_list)
     game_over = False
 
@@ -121,5 +124,6 @@ def hangman_game():
                 secret_word = choose_random_word(word_list)
             else:
                 break
+              
 # Start the game:
 hangman_game()
