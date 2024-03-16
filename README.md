@@ -4,8 +4,8 @@
 ✨ Join us as we code, document, and have a blast with Hangman! 🎉  
 
 ## Team Members
-👩‍💻 *Driksha Thakur* (2310991822) - Documenter  
-👩‍💻 *Kashish Sharma* (2310931001) - Developer  
+👩‍💻 Driksha Thakur (2310991822) - Documenter  
+👩‍💻 Kashish Sharma (2310931001) - Developer  
 
 ## Instructions for Running the Game
 1. Clone or download the repository to your local machine.
@@ -13,7 +13,7 @@
 3. Open up your terminal or command prompt and navigate to where you've saved the game files.
 4. Get ready to play by typing in the following command:
     
-    python hangman.py
+    hangman.py
     
 5. Follow the prompts, guess those letters, and let's uncover some secret countries together! 🌍
 
