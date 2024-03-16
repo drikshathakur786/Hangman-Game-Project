@@ -106,6 +106,7 @@ def hangman_game():
                 print('You guessed it!')
                 print('The secret word is "' + secret_word + '". You win!')
                 game_over = True
+              
         else:
             missed_letters += guess
 
