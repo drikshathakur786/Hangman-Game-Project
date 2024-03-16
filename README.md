@@ -4,8 +4,8 @@
 ✨ Join us as we code, document, and have a blast with Hangman! 🎉  
 
 ## Team Members
-👩‍💻 **Driksha Thakur** (2310991822) - Documenter  
-👩‍💻 **Kashish Sharma** (2310931001) - Developer  
+👩‍💻 **Driksha Thakur** (2310991822) - Documenter and Project Manager
+👩‍💻 **Kashish Sharma** (2310931001) - Developer and Tester   
 
 ## Instructions for Running the Game
 1. Clone or download the repository to your local machine.
