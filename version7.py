@@ -241,5 +241,5 @@ def select_level():
 
     level_window.mainloop()
 
-# Show level selection window
+# Show level selection windows
 select_level()
