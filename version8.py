@@ -3,7 +3,7 @@ from tkinter import messagebox
 import random
 import time
 
-# Hangman graphics for different stages of the game
+# Hangmangit pgit graphics for different stages of the game
 HANGMAN_GRAPHICS = ['''
   +---+
       |
